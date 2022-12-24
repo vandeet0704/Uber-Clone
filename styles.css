@@ -1,11 +1,11 @@
 body{
   font-family: "Montserrat";
+  background-color: #ddd;
 }
 
 ul{
   list-style: none;
 }
-
 .icon-right{
   margin-left: 8px;
 }
@@ -43,6 +43,9 @@ ul{
   font-size: 1.5em;
   padding: 0px 25px;
 }
+.dropbtn-clicked{
+  background-color: #444444;
+}
 
 .dropdown{
   color:#888888;
@@ -68,6 +71,10 @@ ul{
   background-color: #eeeeee;
   color: black;
 }
+
+.hide{
+  display: none;
+}
 .nav-content{
   padding: 8px 16px;
   margin-top: -3px;
@@ -83,13 +90,53 @@ ul{
   color: black;
   margin-right: 60px;
 }
+
+.signup-btn-mobile{
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+}
+
 .signup-btn:hover{
   background-color: #ddd;
 }
 .login-btn{
   margin-left: 10px;
 }
+.menu-mobile{
+  margin-right: 20px;
+  color: white;
+}
 
-.show{
-  display: block;
+/* Overlay */
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0;
+  top: 60px;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  background-color: white;
+}
+
+.menu-overlay-list{
+  margin: 0;
+  padding: 0;
+}
+.menu-overlay-listitem{
+  font-size: 1.8em;
+  font-weight: 600;
+  padding: 15px 30px;
+  margin: 0;
+}
+.menu-overlay-listitem:hover{
+  color:#333333;
+}
+.menu-overlay-dropbtn{
+  float: right;
+}
+.languagebtn{
+  font-size: 1em;
 }

@@ -17,14 +17,14 @@
   <title>Earn Money by Driving or Get a Ride Now | Uber India</title>
 </head>
 <body>
-  <!-- Navbar -->
+  <!--Desktop Navbar -->
   
-  <div class="navbar-container">
+  <div id="desktop-navbar" class="navbar-container hide">
     <nav>
       <ul>
         <li class="logo nav-item left-item"><a>Uber</a></li>
-        <li class="nav-item left-item"><div onclick="myFunction()" class="nav-content dropbtn"><a>Company<i class="icon-right fa-solid fa-circle-chevron-down"></i></a></div></li>
-        <div id="myDropdown" class="dropdown">
+        <li class="nav-item left-item"><div id="dropbtn" class="nav-content"><a>Company<i class="icon-right fa-solid fa-circle-chevron-down"></i></a></div></li>
+        <div id="myDropdown" class="dropdown hide">
           <li><div class="dropdown-content"><a>About us</a></div></li>
           <li><div class="dropdown-content"><a>Our offerings</a></div></li>
           <li><div class="dropdown-content"><a>How Uber works</a></div></li>
@@ -43,6 +43,32 @@
       </ul>
     </nav>
 
+  </div>
+
+  <!-- Mobile Navbar -->
+  <div id="mobile-navbar" class="navbar-container hide">
+    <nav>
+      <ul>
+        <li class="logo nav-item left-item"><a>Uber</a></li>
+        <li class="nav-tem right-item"><div id="menu-btn" class="nav-content menu-mobile"><i class="fa-solid fa-bars"></i></div></li>
+        <li class="nav-item right-item"><div class="nav-content signup-btn-mobile"><a>Sign up</a></div></li>
+        <li class="nav-item right-item"><div class="nav-content login-btn"><a>Log in</a></div></li>
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- Menu Overlay for mobile -->
+  <div id="menu-overlay" class="overlay hide">
+    <ul class="menu-overlay-list">
+      <li><div class="menu-overlay-listitem">
+        <a>Company<a>
+        <div class="menu-overlay-dropbtn"><i class="fa-solid fa-circle-chevron-down"></i></div>  
+        </div></li>
+      <li><div class="menu-overlay-listitem"><a>Safety<a></div></li>
+      <li><div class="menu-overlay-listitem"><a>Help<a></div></li>  
+      <li><div class="menu-overlay-listitem"><a>Products<a></div></li>
+      <li><div class="menu-overlay-listitem languagebtn"><a><i class="icon-left fa-solid fa-globe"></i>EN</a></div></li>
+    </ul>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
