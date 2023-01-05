@@ -47,3 +47,12 @@ $("#menu-btn").click(function () {
         $("#menu-btn").html("<i class='fa-solid fa-xmark'></i>")
     }
 })
+
+$("#overlay-dropdown").click(function () {
+    if($("#overlay-comp-list").is(":visible")){
+        $("#overlay-comp-list").slideUp(100);
+    }
+    else{
+        $("#overlay-comp-list").slideDown(100);
+    }
+})
